@@ -3,8 +3,6 @@ package com.steisy.zadanie.repository;
 import com.steisy.zadanie.model.CouriersModel;
 import com.steisy.zadanie.model.PhoneModel;
 import com.steisy.zadanie.model.ZadanieModel;
-import org.hibernate.type.LocalDateType;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -13,16 +11,9 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import javax.persistence.EntityManager;
-import javax.persistence.Query;
-import javax.persistence.TypedQuery;
 import java.time.LocalDateTime;
-import java.util.AbstractList;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-
-
-import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.eq;
 
