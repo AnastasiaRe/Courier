@@ -11,12 +11,12 @@ public class PhoneModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int id;//Идентификатор записи
 
     @Column(name = "zadanie_id")
-    private int zadanieId;
+    private int zadanieId;//Идентификатор задания
 
-    private String status;
+    private String status;//Статус задания
 
-    private String comment;
+    private String comment;//Комментарий к заданию
 }

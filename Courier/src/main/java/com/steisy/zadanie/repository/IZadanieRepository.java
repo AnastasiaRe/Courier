@@ -3,17 +3,12 @@ package com.steisy.zadanie.repository;
 import com.steisy.zadanie.model.CouriersModel;
 import com.steisy.zadanie.model.PhoneModel;
 import com.steisy.zadanie.model.ZadanieModel;
-import org.springframework.web.bind.annotation.PostMapping;
-
-import javax.xml.crypto.Data;
-import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 
 public interface IZadanieRepository {
 
     /**
-     * Сохраняет курьера
+     * Сохраняет курьерa
      *
      * @param couriersModel курьер
      * @return сохраненного курьера
