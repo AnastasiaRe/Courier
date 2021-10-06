@@ -1,10 +1,8 @@
 package com.steisy.zadanie.model;
 
 import lombok.Data;
-
 import javax.persistence.*;
 import java.time.LocalDateTime;
-
 
 @Data
 @Entity
@@ -13,15 +11,15 @@ public class CouriersModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int id;//Идентификатор курьера
 
-    private String courier;
+    private String courier;//Курьер
 
-    private int number;
+    private int number;//Номер задания
 
     @Column(name = "date_time")
     @Temporal(TemporalType.TIMESTAMP)
-    private LocalDateTime dateTime;
+    private LocalDateTime dateTime;//Дата и время добавления задания
 
-    private String status;
+    private String status;//Статус задания
 }

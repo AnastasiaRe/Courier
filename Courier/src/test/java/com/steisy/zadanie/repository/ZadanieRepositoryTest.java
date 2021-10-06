@@ -9,7 +9,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
-
 import javax.persistence.EntityManager;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -25,7 +24,6 @@ public class ZadanieRepositoryTest {
 
     @Mock
     private EntityManager entityManager;
-
 
     @Test
     void create() {

@@ -3,7 +3,7 @@ package com.steisy.zadanie.service;
 import com.steisy.zadanie.model.CouriersModel;
 import com.steisy.zadanie.model.PhoneModel;
 import com.steisy.zadanie.model.ZadanieModel;
-import com.steisy.zadanie.repository.ZadanieRepository;
+import com.steisy.zadanie.repository.IZadanieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,8 +13,7 @@ import java.util.List;
 public class ZadanieService {
 
     @Autowired
-    private ZadanieRepository zadanieRepository;
-
+    private IZadanieRepository zadanieRepository;
 
 
     public CouriersModel create(CouriersModel couriersModel){

@@ -42,7 +42,7 @@ public class ZadanieController {
 
     @PostMapping("/savePhone")
     @ResponseStatus(HttpStatus.CREATED)
-    public PhoneModel savePhone(@RequestParam int id, String status, String comment){
+    public PhoneModel savePhone(@RequestParam int id, @RequestParam String status, @RequestParam String comment){
         return zadanieService.savePhone(id, status, comment);
     }
 

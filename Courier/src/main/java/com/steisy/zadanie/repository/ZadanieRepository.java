@@ -3,10 +3,8 @@ package com.steisy.zadanie.repository;
 import com.steisy.zadanie.model.CouriersModel;
 import com.steisy.zadanie.model.PhoneModel;
 import com.steisy.zadanie.model.ZadanieModel;
-
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.time.LocalDateTime;
@@ -19,8 +17,6 @@ public class ZadanieRepository implements IZadanieRepository {
 
     @PersistenceContext
     private EntityManager entityManager;
-
-
 
     public CouriersModel create(CouriersModel couriersModel) {
         couriersModel.setDateTime(LocalDateTime.now());
@@ -65,9 +61,6 @@ public class ZadanieRepository implements IZadanieRepository {
         }
         return zadanieModels;
     }
-
-
-
 
     public PhoneModel savePhone( int id, String status, String comment){
         ZadanieModel zadanieModel = entityManager.find(ZadanieModel.class, id);
